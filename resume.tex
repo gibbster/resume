@@ -1,11 +1,14 @@
 % LaTeX resume using res.cls
 \documentclass[line,margin]{res} 
+
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
-\usepackage{kpfonts} 
-\usepackage[T1]{fontenc} 
 \usepackage{newcent}   % uses new century schoolbook postscript font 
+\usepackage{graphicx}
+\usepackage[fontsize=8]{scrextend}
 
 \begin{document}
+ 
+%\includegraphics[scale=0.5]{global-black.png}
 
 \vspace{10mm}
 
@@ -16,52 +19,74 @@
 
  
 \begin{resume}
-\section{OBJECTIVE}       A position in the field of information technology, with special 
-                interests in business applications programming, semantic standards-based web applications,
-                information processing, and management systems. 
+\section{OBJECTIVE}       An architect position in the field of information technology, with special 
+                interests in business systems architecture, applications in the health sector, and
+                information processing.  
  
 %\section{OBJECTIVE}    A position in the field of data processing and
 %mathematical modeling, with an emphasis on stochastic models. 
 
 
 \section{EXPERIENCE} 
-{\sl Solutions Architect} \hfill March 2011 - \\
+{\sl Chief Technology Officer} \hfill April 2013 - \\
+                Interpreter Intelligence, 
+                San Francisco, USA
+                 \vspace{-5mm}
+                 \begin{itemize}  \itemsep -2pt % reduce space between items
+                 \item Responsible for leading requirement gathering and discovery sessions with customers, 
+                 developing and prioritizing the road map, and tracking progress in weekly agile sprints against
+                 product milestones.
+                 \item Planned and implemented the architecture across all tiers: a highly available and redundant
+                 back end tier on AWS, a flexible RESTful application tier, and a dynamic Rich Internet Application
+                 front end tier. Designed and developed an HTML5 multi-platform application which integrated with
+                 our RESTful API.
+                 \item Developed processes and procedures for each step in the software life cycle, including:
+                 \begin{itemize}
+                 \item Standard templates and mockup tools for use during requirement gatherings
+                 \item Coding standards, unit and functional tests, and code quality tools during development
+                 \item Security and compliance checklists to review at regular points during the development cycle
+                 \item Deployment scripts and procedures designed to quickly and safely deploy to multiple environments
+                 \end{itemize}
+                 \item Responsible for maintaining security and data privacy, including HIPAA compliance. This entailed
+                 creating a flexible and robust authentication and authorization system, deploying industry-standard security tools,
+                 and developing policies for the safe handling of high-risk protected data.
+                 \end{itemize}
+
+{\sl Solutions Architect} \hfill January 2011 - March 2013 \\
                 AurionPro Solutions, 
                 San Francisco, USA
+                 \vspace{-5mm}
                  \begin{itemize}  \itemsep -2pt % reduce space between items
-                 \item Served as Technical Lead for a high traffic commercial
-                   intranet migration. Recommended, designed, and implemented a
-                   replacement for a legacy system which improved authoring
-                   experience and performance, and saved over \$300k/year in
-                   licensing fees.
                  \item Led the migration of a major public facing technology
                  site to Drupal 7, easing content management and adding new
                  emphasis on the client's core strengths. The resulting
                  SEO and content entry improvements led to
-                 pageviews increasing by \%78, visits up \%66.
-                 \item Improved reliability and deployment timeframe of a
+                 page views increasing by \%78, visits up \%66.
+                 \item Improved reliability and deployment time frame of a
                  complex process management application through the introduction
                  of systematic acceptance testing. Dramatically increased
                  performance by adapting and tuning the persistence layer.
                  \item Led the rich user experience redesign of a medical
-                 service portal. Was responsible for implementing high level
-                 composites as well as designing dynamic front-end behaviour
+                 portal redesign. Was responsible for implementing high level
+                 composites as well as designing dynamic front-end behavior
                  for a modern user experience.
                  \end{itemize}
                     
 {\sl Web Development Engineer} \hfill May 2010 - August 2010\\
                 TP1 Internet 360, 
                 Montreal, Canada
+                 \vspace{-5mm}
                  \begin{itemize}  \itemsep -2pt % reduce space between items
                  \item Developed complex rules-based translation system for a
                  multilingual content-heavy site.
                  \item Implemented a customized e-commerce solution with a
-                 Drupal CMS front end and a customized Magento backend.
+                 Drupal CMS front end and a customized Magento back end.
                  \end{itemize}
 
 {\sl Web Development Engineer} \hfill May 2009 - April 2010\\
                 EvolvingWeb, 
                 Montreal, Canada
+                 \vspace{-5mm}
                  \begin{itemize}  \itemsep -2pt % reduce space between items
                  \item Developed rich user experiences using Drupal in
                  combination with third party interfaces such as video and
@@ -73,9 +98,10 @@
                  integration server.
                  \end{itemize}
                 
-{\sl Senior Consultant} \hfill May 2006 - August 2008\\
-                Vignette Corporation, 
+{\sl Technical Consultant} \hfill May 2006 - August 2008\\
+                Cisma Consulting, 
                 Paris, France
+                 \vspace{-5mm}
                  \begin{itemize}  \itemsep -2pt % reduce space between items
                  \item Implemented customized collaborative and portal solutions for major governmental and private organizations using Vignette Portal and Vignette Collaboration. Integrated these products with a variety of legacy systems. 
                 \item Developed long-term relationships with clients and partners by providing a high level of support and transparency.
@@ -84,45 +110,47 @@
 				\item Assisted in the sales process by developing extensive custom proof of concept demonstrations for the Vignette sales team under tight time constraints.
                 \end{itemize}
                                     
-\section{COMPUTER \\ SKILLS} {\sl Languages \& Software:} 
+\section{SKILLS} 
+      {\sl Software Architecture:}
+    \vspace{-5mm}
 	\begin{itemize}
-    \item Experienced in a wide variety of data processing tasks using matlab,
-      maple, python tools, R, etc. Includes experience creating custom monte-carlo
-      type models.
-    \item Proficient in modern front-end engineering techniques, including
-      structured Javascript techniques (IIFE, modules, etc). Many years of 
-      experience using jQuery, familiar with tools such as BackboneJS and
-      Jasmine.
-    \item Advocate for design implementation tools such as SASS and
-      Compass, and techniques such as Responsive design.
-    \item Proven experience performance tuning using a combination of
-      techniques such as compression, reverse-proxying, object and fragment caching, and
-      HTTP header manipulation.
-		\item Familiar in a wide variety of programming languages such as Java, Python, Scheme, PHP, and paradigms including Object Oriented, Functional, and Data Directed. 
-    \item Extensive background in web content management, including licensed
-      enterprise solutions like Vignette and open source
-      solutions like Drupal.
-    \item Excellent knowledge of MVC frameworks such as Spring, with a special
-      interest in modern lightweight alternatives such as Django and Rails.
-		\item Experienced in REST service oriented architecture. More sophisticated
-      implementations of REST involving concurrency and complicated business
-      logic are a specialty.
-    \item Proficient in relational database theory, as well as working knowledge of all major
-      RDBMS vendors. Familiar with NoSQL implementations such as MongoDB, as
-      well as map-reduce theory.
-		\item Skilled system administrator on Linux, Unix and Windows platforms        
-		\item Extensive use of VMWare and Virtualbox virtualization technologies for prototyping,
-    and development. Experienced using Vagrant and Chef for rapid provisioning
-    and testing.
+        \item Experienced in creating highly reliable and redundant systems using fail over 
+        with automated server deployment and provisioning. Thorough knowledge of virtualization
+        techniques to decrease costs and increase flexibility.
+        \item Experienced in all aspects of the Amazon Web Services (AWS) platform, including security, analytics, 
+        load and computation management, and persistence.
+		\item Expert in best practices in rapid and safe deployment. Experienced creating systems
+        for monitoring code quality and other metrics using continuous integration servers, and in 
+        creating tools and procedures for agile deployments. 
+        \item Excellent knowledge in the use and design of APIs for inter-application communication using
+        REST and other protocols.
+        \item Developed large scale front end Rich Internet Applications (RIA) in javascript. Used tools like Backbone.js and
+        Require.js to manage highly dynamic front end logic.
+        \item Experienced in creating and implementing analytics tools, including page request, server and persistence load, and thread analysis.
 	\end{itemize}
       {\sl Project Management:}
+    \vspace{-5mm}
 	\begin{itemize}
-		\item Agile project management evangelist, with expertise in
-        implementing Scrum and XP.
+		\item Agile project management evangelist, with expertise in implementing Scrum and XP.
 		\item Proven track record implementing tools designed to improve code
         quality and reduce time to deliverables, such as source control
         management, unit and functional testing, and continuous integration
         servers.        
+	\end{itemize}
+      {\sl Languages \& Software:} 
+    \vspace{-5mm}
+	\begin{itemize}
+		\item Familiar in a wide variety of programming languages such as Java, Python, Javascript, PHP, and paradigms including Object Oriented, Functional, and Data Directed. 
+		\item Excellent knowledge of the contemporary enterprise Java stack, as well as industry-standard frameworks such as Spring.
+		\item Excellent knowledge of modern lightweight MVC web frameworks such as Django and Rails, as well as lightweight content management systems such as Drupal.
+        \item Experienced in the use of modern Javascript development techniques, including tools and frameworks (Backbone.js, require.js, Grunt.js, etc), and testing methodologies.
+		\item Proficient at relational database theory, as well as working knowledge of all major RDBMS vendors. Good knowledge of nonrelational alternatives, such as Redis, MongoDB, and Neo4J.
+	\end{itemize}
+      {\sl Operating Systems:}
+    \vspace{-5mm}
+	\begin{itemize}
+		\item Skilled system administrator on Linux, Unix and Windows platforms        
+		\item Extensive use of virtualization technologies for prototyping, functional testing, and development.        
 	\end{itemize}
                  
 \section{EDUCATION} {\sl Bachelor of Science,} Major in Mathematics \\
@@ -134,17 +162,5 @@
                 Jakarta, Indonesia,  \\
                 Achieved highest score in International Baccalaureate Mathematics, Physics, and Computer Science examinations
                 
-\section{OTHER \\ SKILLS \& CERTIFICATIONS}             
-Fluent in spoken French. Excellent written French. \\
-Enthusiastic tennis player and cyclist. \\
-Amateur machinist and welder.
-
 \end{resume}
 \end{document}
-
-
-
-
-
-
-
